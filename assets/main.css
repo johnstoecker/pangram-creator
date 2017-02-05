@@ -1,0 +1,17 @@
+.word-bank-letter {
+  padding: 5px 8px;
+  border: 1px solid black;
+}
+.panagram-input {
+  margin-top: 15px;
+}
+.caret-input {
+  vertical-align: middle;
+  height:20px;
+  width:20px;
+}
+#panagrammer {
+  width: 630px;
+  border: 0px;
+  height: 20px;
+}
