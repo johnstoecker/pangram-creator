@@ -7,6 +7,19 @@ body {
   display: flex;
   justify-content: center;
 }
+.pangram-definition-container {
+  margin: 10px;
+}
+.pangram-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+.pangram-pronunciation {
+  font-size: 24px;
+}
+.pangram-pos {
+  font-style:italic;
+}
 .pangram-container {
   margin-top: 100px;
 }

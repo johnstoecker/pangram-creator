@@ -20,6 +20,12 @@
 </head>
 <body>
 <div class="pangram-container" ng-controller="pangramCreatorController">
+  <div class="pangram-definition-container">
+    <div class="pangram-title">pan·gram</div>
+    <div class="pangram-pronunciation">/'pangram/</div>
+    <div class="pangram-pos">noun</div>
+    <div class="pangram-definition">a sentence or verse that contains all the letters of the alphabet.</div>
+  </div>
   <div class="word-bank">
     <span class="word-bank-letter" ng-repeat="letter in wordBank" ng-bind="letter">
     </span>
