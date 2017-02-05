@@ -1,8 +1,20 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+.pangram-container {
+  margin-top: 100px;
+}
 .word-bank-letter {
   padding: 5px 8px;
   border: 1px solid black;
 }
-.panagram-input {
+.pangram-input {
   margin-top: 15px;
 }
 .caret-input {
@@ -10,7 +22,7 @@
   height:20px;
   width:20px;
 }
-#panagrammer {
+#pangrammer {
   width: 630px;
   border: 0px;
   height: 20px;

@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
 
-<html lang="en" ng-app="panagramCreator">
+<html lang="en" ng-app="pangramCreator">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="description" content="John Stoecker, panagram creator"/>
-<meta name="keywords" content="john, stoecker, panagram, creator"/>
+<meta name="description" content="John Stoecker, pangram creator"/>
+<meta name="keywords" content="john, stoecker, pangram, creator"/>
 <meta name="classification" content="public"/>
 <meta name="resource-type" content="document"/>
 <meta name="author" content="johnstoecker.com"/>
@@ -16,20 +16,20 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <script src="assets/main.js"></script>
-<title>Panagram Creator</title>
+<title>pangram Creator</title>
 </head>
 <body>
-<div ng-controller="PanagramCreatorController">
+<div class="pangram-container" ng-controller="pangramCreatorController">
   <div class="word-bank">
     <span class="word-bank-letter" ng-repeat="letter in wordBank" ng-bind="letter">
     </span>
   </div>
-  <div class="panagram-length" ng-show="wordBank.length==0">
-    Your panagram length is: {{ panagram.length }}
+  <div class="pangram-length" ng-show="wordBank.length==0">
+    Your pangram length is: {{ pangram.length }}
   </div>
-  <div class="panagram-input">
+  <div class="pangram-input">
     <img class="caret-input" src="assets/caret.png"/>
-    <input id="panagrammer" type="text" ng-model="panagram"/>
+    <input id="pangrammer" type="text" ng-model="pangram"/>
   </div>
 </div>
 </body>
