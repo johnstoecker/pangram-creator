@@ -21,4 +21,5 @@ angular.module('pangramCreator', [])
         $scope.wordBank = tempWordBank;
       }
     });
+    $("#pangrammer")[0].focus()
 });
