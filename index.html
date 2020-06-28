@@ -27,8 +27,8 @@
     <div class="pangram-definition">a sentence or verse that contains all the letters of the alphabet.</div>
   </div>
   <div class="word-bank">
-    <span class="word-bank-letter" ng-repeat="letter in wordBank" ng-bind="letter">
-    </span>
+    <div class="word-bank-letter" ng-repeat="letter in wordBank" ng-bind="letter">
+    </div>
   </div>
   <div class="pangram-length" ng-show="wordBank.length==0">
     Your pangram length is: {{ pangram.length }}
@@ -36,6 +36,12 @@
   <div class="pangram-input">
     <img class="caret-input" src="assets/caret.png"/>
     <input id="pangrammer" type="text" ng-model="pangram"/>
+  </div>
+  <div class="used-letters">
+    <div class="used-letter-container" ng-repeat="(letter,letterCount) in usedLetterCount">
+      <div class="used-letter" ng-bind="letter"></div>
+      <div class="used-letter-count" ng-bind="letterCount"></div>
+    </div>
   </div>
 </div>
 </body>
